@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddTaskActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:color="@color/design_default_color_background"
+        android:contentDescription="Update Tugas "
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        android:title="Judul Toolbar"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/title_input2"
+        android:layout_width="300dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="216dp"
+        android:ems="10"
+        android:hint="Mata Kuliah"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/description_input2"
+        android:layout_width="302dp"
+        android:layout_height="136dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="284dp"
+        android:hint="Deskripsi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/deadline_input2"
+        android:layout_width="303dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="448dp"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="Deadline"
+        android:inputType="none"
+        android:onClick="showDatePickerDialog"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/update_button"
+        android:layout_width="301dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="516dp"
+        android:text="Ubah"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/delete_button"
+        android:layout_width="301dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="584dp"
+        android:text="Hapus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="1dp"
+        tools:ignore="MissingConstraints">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
